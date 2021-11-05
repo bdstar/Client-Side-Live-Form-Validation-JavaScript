@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+</head>
+
+<body>
+<div id="contact">
+  <h3>General Information</h3>
+  <form method="post" name="ContactUs">																	
+
+<!--======================= Author name Field ===========================-->    
+
+    <div class="comment-author">
+       <label for="author">Name <span class="required">*</span></label>
+       <span class="arrow-box" id="author-arrow-box"></span>
+       <input id="author" name="author" type="text" value="" size="30" aria-required="true">
+       <span id="author-footer-ex">Name has only numbers and alphabets. &nbsp; &nbsp; &nbsp; Example: Adam99</span>
+    </div>
+
+<!--========================== Address field =============================-->
+   
+    <div class="comment-address">
+       <label for="address">Address</label>
+       <span class="arrow-box" id="address-arrow-box"></span>
+       <input id="address" name="address" type="text" value="" size="30">
+       <span id="address-footer-ex">Type your Address: i.e, Arlington, Texas, USA</span>
+    </div>    
+
+<!--========================= Email field ==========================-->
+
+    <div class="comment-email">
+       <label for="email">Email <span class="required">*</span></label>
+       <span class="arrow-box" id="email-arrow-box"></span> 
+       <input id="email" name="email" type="text" value="" size="30" aria-required="true">
+       <span id="email-footer-ex">Example: emailAddress@site.com</span>
+    </div>
+
+<!--========================= Password field ==========================-->
+
+    <div class="comment-password">
+       <label for="password">Password <span class="required">*</span></label>
+       <span class="arrow-box" id="password-arrow-box"></span> 
+       <input id="password" name="password" type="password" value="" size="30" aria-required="true">
+       <span id="password-footer-ex">Keep Securate your account</span>
+    </div>
+
+<!--========================== Web URL Field ==========================-->
+   
+    <div class="comment-url">
+       <label for="url">Website</label>
+       <span class="arrow-box" id="url-arrow-box"></span>
+       <input id="url" name="url" type="text" value="" size="30">
+       <span id="url-footer-ex">Example: http://www.WebAddress.com</span>
+    </div>
+
+<!--====================== Comment Area field ==========================-->
+    
+    <div class="comment-area">
+       <label for="comment">Comment</label>
+       <span class="arrow-box" id="comment-arrow-box"></span>
+       <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+       <span id="comment-footer-ex">You can use html tag to write the comment</span>
+    </div>
+
+<!--========================= Answer the Addition =============================-->
+
+    <div class="addition-area">
+       <label for="add_ans" id="add_label">
+            <script language="javascript">
+                 var value1=Math.floor(Math.random()*10);
+                 var value2=Math.floor(Math.random()*10);
+                 document.write(value1+" + "+value2+" = ?");
+            </script>
+            <span class="required">*</span>
+       </label>
+       <span class="arrow-box" id="add-arrow-box"></span>
+       <input id="add" name="add" type="text" size="5">
+       <span id="add-footer-ex">Answer the Question?</span>
+    </div>
+<!--==========================- Submit Button ==============================-->
+    						
+    <div class="comment-submit">
+        <input name="submit" type="button" id="submit" value="Post Comment">
+	</div>
+
+  </form>
+</div>
+
+</body>
+</html>

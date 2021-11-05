@@ -1,0 +1,202 @@
+:focus {
+	outline: 0;
+}
+body {
+	padding: 0 2em;
+	background:url(../image/bg.jpg) center fixed;
+}
+/*------------- Comment Form ---------------*/
+#contact {
+	background: #ddd;
+	border: 1px solid #d3d3d3;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0 auto 2.625em;
+	padding: 1.625em;
+	position: relative;
+	width: 58%;
+	overflow:hidden;
+}
+#contact h3 {
+	color: green;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+	margin: 0;
+}
+#contact p {
+	font-size: 12px;
+}
+
+#contact label {
+	line-height: 2.2em;
+}
+
+#contact input[type=text],
+#contact input[type=password] {
+	display: block;
+	height: 24px;
+	width: 75%;
+}
+
+#contact input[type="text"],
+#contact input[type="password"],
+#contact textarea {
+	background: #fff;
+	border: 4px solid #eee;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+	-moz-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+	box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+	position: relative;
+	padding: 10px;
+	text-indent: 80px;
+}
+#contact .comment-author,
+#contact .comment-address,
+#contact .comment-email,
+#contact .comment-password,
+#contact .comment-url,
+#contact .comment-area,
+#contact .addition-area{
+	position: relative;
+	width:80%;
+}
+
+#contact .addition-area{
+	width:40%;
+}
+
+#contact .comment-author label,
+#contact .comment-address label, 
+#contact .comment-email label,
+#contact .comment-password label,
+#contact .comment-url label,
+#contact .comment-area label,
+#contact .addition-area label{
+	background: #eee;
+	-webkit-box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
+	-moz-box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
+	box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
+	color: #555;
+	display: inline-block;
+	font-size: 13px;
+	left: 4px;
+	min-width: 60px;
+	padding: 4px 10px;
+	position: relative;
+	top: 40px;
+	z-index: 1;
+}
+#contact input[type="text"]:focus,
+#contact input[type="password"]:focus,
+#contact textarea:focus {
+	text-indent: 0;
+	z-index: 1;
+}
+#contact textarea {
+	resize: vertical;
+	width: 95%;
+}
+.required {
+	color: #bd3500;
+	font-size: 22px;
+	font-weight: bold;
+	left: 75%;
+	position: absolute;
+	z-index: 1;
+}
+#contact form-text {
+	font-size: 13px; 
+	margin: 10px 0;
+}
+/* ----Comment submit area ------*/
+#contact .comment-submit {
+	float: right;
+}
+#contact input#submit {
+	background: #222;
+	border: 1px solid green;
+	border-radius: 5px;	
+	-moz-border-radius: 5px;
+	color: #eee;
+	cursor: pointer;
+	font-size: 15px;
+	padding: 5px 42px 5px 22px;
+	position: relative;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+	height:40px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);	
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	
+	transition:all 0.3s ease-in-out;
+}
+
+#contact input#submit:hover{
+	background:#600;
+	color:#0F0;
+}
+
+#contact input#submit:active {
+	background: #1982d1;
+	color: #bfddf3;
+}
+/* ----End of :Comment submit area ------*/
+/*--------------------------------------------*/
+/*----link<a> -----*/
+#contact a{
+	color: #1982d1;
+	text-decoration: none;
+}
+#contact a:hover {
+	text-decoration: underline;
+}
+/*----End of link<a> -----*/
+
+#author-footer-ex,
+#address-footer-ex,
+#email-footer-ex,
+#password-footer-ex,
+#url-footer-ex,
+#comment-footer-ex,
+#add-footer-ex{
+	opacity:0;
+	top:10px;
+	left:10px;
+	position:relative;
+	color: #600;
+}
+
+/*------------------------------*/
+
+.arrow-box{
+	position: relative;
+	background: #88b7d5;
+	border: 2px solid #c2e1f5;
+	width:200px;	
+	border-radius:3px;
+	margin-left:5px;
+	color:#003 !important;
+	left:250px;
+	top:25px;
+	opacity:0;
+	padding: 3px;
+}
+
+.arrow-box:after{
+	right: 100%;
+	border:1px solid transparent;
+	content: "";
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	pointer-events: none;
+	
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #88b7d5;
+    border-width: 7px;
+	top: 50%;
+    margin-top: -10px;
+}
